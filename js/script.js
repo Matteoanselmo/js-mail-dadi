@@ -29,10 +29,10 @@ userButtonLancer.addEventListener('click' , function(){
     document.getElementById('my-number').innerHTML = `il mio numero è:\xa0`;
     document.getElementById('pc-number').innerHTML = `il numero del pc è:\xa0`;
     // CREO LE VARIABILI DI NUMERI RANDOM
-    let userNumber = Math.floor(Math.random() * 11);
+    let userNumber = Math.floor((Math.random() * 6) + 1 );
     document.getElementById('my-number').innerHTML += `${userNumber}`;
 
-    let pcNumber = Math.floor(Math.random() * 11);
+    let pcNumber = Math.floor((Math.random() * 6) + 1 );
     document.getElementById('pc-number').innerHTML += `${pcNumber}`;
     //PER SICUREZZA LE RIPRODUCO ANCHE SU CONSOLE
     console.log(userNumber);

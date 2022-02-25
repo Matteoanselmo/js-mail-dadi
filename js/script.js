@@ -27,7 +27,7 @@ userButtonLancer.addEventListener('click' , function(){
     //DO VALORI BASE AI P DEL HTML
     resultButtnoLancer.innerHTML ='il risultato è:\xa0'; 
     document.getElementById('my-number').innerHTML = `il mio numero è:\xa0`;
-    document.getElementById('pc-number').innerHTML = `il mio numero è:\xa0`;
+    document.getElementById('pc-number').innerHTML = `il numero del pc è:\xa0`;
     // CREO LE VARIABILI DI NUMERI RANDOM
     let userNumber = Math.floor(Math.random() * 11);
     document.getElementById('my-number').innerHTML += `${userNumber}`;

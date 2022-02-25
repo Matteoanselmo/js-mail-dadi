@@ -21,16 +21,23 @@ for(let i = 0; i < emailList.length; i++ ){
 const userButtonLancer = document.getElementById('my-button-lancer');
 let resultButtnoLancer = document.getElementById('win-or-lose');
 
+
+
 userButtonLancer.addEventListener('click' , function(){
+    //DO VALORI BASE AI P DEL HTML
     resultButtnoLancer.innerHTML ='il risultato è:\xa0'; 
-    let userNumber = document.getElementById('my-number');
-    userNumber = Math.floor(Math.random() * 11);
-    let pcNumber = document.getElementById('pc-number');
-    pcNumber = Math.floor(Math.random() * 11);
-    userNumber.innerHTML += `${userNumber.value}`;
-    pcNumber.innerHTML += `${pcNumber}`;
+    document.getElementById('my-number').innerHTML = `il mio numero è:\xa0`;
+    document.getElementById('pc-number').innerHTML = `il mio numero è:\xa0`;
+    // CREO LE VARIABILI DI NUMERI RANDOM
+    let userNumber = Math.floor(Math.random() * 11);
+    document.getElementById('my-number').innerHTML += `${userNumber}`;
+
+    let pcNumber = Math.floor(Math.random() * 11);
+    document.getElementById('pc-number').innerHTML += `${pcNumber}`;
+    //PER SICUREZZA LE RIPRODUCO ANCHE SU CONSOLE
     console.log(userNumber);
     console.log(pcNumber);
+    //INIZIO IL CILCO PER CONFRONTARE LE 3 CASISTICHE E OTTENERE IL RISSULTATO 
     if(userNumber > pcNumber){
         resultButtnoLancer.classList.remove('text-warning');
         resultButtnoLancer.classList.add('text-success');

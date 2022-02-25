@@ -1,0 +1,9 @@
+#my-email{
+    background-image: url(../img/borghese.png);
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 280px;
+    text-align: center;
+    font-size: x-large;
+}

@@ -1,5 +1,5 @@
 const emailList = ['matteo@gmail.com' , 'luca@gmail.com', 'andrea@gmail.com' , 'arianna@gmail.com' , 'riccardo@gmail.com'];
-let userMail = prompt('Dammi la tua mail');
+let userMail = prompt('Dammi la tua mail').toLocaleLowerCase().trim();
 let risultMail = document.getElementById('my-email');
 
 for(let i = 0; i < emailList.length; i++ ){
